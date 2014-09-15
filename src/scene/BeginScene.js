@@ -1,31 +1,41 @@
 var BeginLayer = cc.Layer.extend({
-	sprite:null,
+	
+	_tag : "BeginLayer",
+	
 	ctor:function () {
 		this._super();
 		
+		//this.showLogoAnimation();
+		this.showWelcome();
 		return true;
 	},
 
 	showLogoAnimation : function() {
-		self.logoNode = cc.Node.create();
-//		this.addChild(self.logoNode);
-//
-//		var logoBg = extendNode(cc.LayerColor.create(cc.c4b(255, 255, 255, 255))).addTo(self.logoNode);
-//		var logo = extendNode(cc.Sprite.create("loading/logo.png")).pos(320, 960 * 0.618).addTo(self.logoNode);
-//
-//		this.addImages();
-//		vv.playBGMusic(bg1);
-//		logo.runAction(cc.Sequence.create(
-//				cc.CallFunc.create(function() {
-//					vv.initMusic();
-//				}),
-//				cc.DelayTime.create(2),
-//				cc.FadeOut.create(0.5),
-//				cc.CallFunc.create(function() {
-//					self.logoNode.removeFromParent(true);
-//					self.showWelcome();
-//				})
-//		));
+		var self = this;
+		var logoNode = extendNode(new cc.Node()).addTo(self);
+		logoNode.addChild(new cc.LayerColor(cc.color(255,255,255,255)));
+		
+		var logo = extendNode(new cc.Sprite("load/logo.png")).addTo(logoNode);
+		
+		logo.attr({
+			x: cc.winSize.width/2,
+			y : cc.winSize.height/2
+		});
+		
+		logo.runAction(cc.Sequence.create(
+				cc.CallFunc.create(function() {
+				}),
+				cc.DelayTime.create(2),
+				cc.FadeOut.create(0.5),
+				cc.CallFunc.create(function() {
+					logoNode.removeFromParent(true);
+					self.showWelcome();
+				})
+		));
+	},
+	
+	showWelcome : function() {
+		
 	}
 	
 });
