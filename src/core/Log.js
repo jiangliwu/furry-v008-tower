@@ -42,6 +42,3 @@ var vv = vv || {};
 	vv.logw = vv.log.w;
 	vv.loge = vv.log.e;
 })();
-
-
-vv.loge("a");

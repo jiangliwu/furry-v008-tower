@@ -4,9 +4,6 @@ var vv = vv || {};
 	GameEvent.___leventTable = {};
 	GameEvent.___leventTableUID = 0;
 	GameEvent.__tag = "GameEvent";
-	/***************************************************************************
-	 * @author jiangliwu
-	 */
 	GameEvent.getEventID = function(eventName) {
 		var ret = GameEvent.___leventTableUID++;
 		GameEvent.___leventTable[ret] = {
@@ -34,8 +31,7 @@ var vv = vv || {};
 		} else if (typeof (event) === "number") {
 			if (GameEvent.___leventTable[event]
 					&& GameEvent.___leventTable[event].func) {
-				vv
-						.logd("call event name = "
+				vv.logd("call event name = "
 								+ GameEvent.___leventTable[event].name,
 								GameEvent.__tag);
 				return GameEvent.___leventTable[event].func(args);
