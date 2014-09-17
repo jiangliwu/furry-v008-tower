@@ -7,6 +7,7 @@
         "src/Util.js",
         "src/scene/BeginScene.js",
         "src/core/GameEvent.js",
-        "src/core/Log.js"
+        "src/core/Log.js",
+        "src/core/FSM.js"
     ]
 }
