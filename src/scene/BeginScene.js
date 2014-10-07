@@ -5,8 +5,11 @@ var BeginLayer = cc.Layer.extend({
 	ctor:function () {
 		this._super();
 		
-		//this.showLogoAnimation();
+		// this.showLogoAnimation();
 		this.showWelcome();
+		
+		
+			
 		return true;
 	},
 
@@ -35,7 +38,8 @@ var BeginLayer = cc.Layer.extend({
 	},
 	
 	showWelcome : function() {
-		
+		vv.lm.init(this);
+		Game.playGame({lvl:0});
 	}
 	
 });

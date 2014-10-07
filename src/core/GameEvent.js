@@ -49,4 +49,5 @@ var vv = vv || {};
 		}
 	}
 	vv.gameEvent = GameEvent;
+	vv.ge = vv.GameEvent;
 })();
