@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="36" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tmw_desert_spacing" tilewidth="32" tileheight="32" spacing="1">
+  <image source="tmw_desert_spacing.png" width="265" height="199"/>
+  <terraintypes>
+   <terrain name="新地形" tile="-1"/>
+  </terraintypes>
+ </tileset>
+ <layer name="bg" width="36" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzNktsKwjAQRKNCrQpaFVQUBBUfvPX/P895qCAl684mG/DhEFgmYZKTKoQwBkfQdmspmPPnYAFO4Awuhbqw52/A9o/6SPkBGIKRsq/qfNeF+0zAFMxI301iH+ne/fwSrMCa9L1L7CPdO5ZnXeT8H+nesTzrIqcP4+s783ER28f++VxfsQw7K+ErlmFn3r6eYJ/IgTjf6isHyXWKrxu4J3JVXP/q00d6X8uccf0i+0jva5lbXGt9pPe1zC2uH0ofTzzce8I4rom8F4zjRsm/Ac8LS/A=
+  </data>
+ </layer>
+ <layer name="destory" width="36" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztk0EKwCAMBP1Jc9P/v7AIFYSGsAa3rNCB3DY6JNrKm0oohPaUCqs+RvIYZOZjBfNCczPZ+UT3rDrMMPZlTg7p62R8vPu83E6fC+xHMTB3+n9ng/js3l3EifP5EkUfJX6fGMX3ky01H4ZjP+MG1fQQUg==
+  </data>
+ </layer>
+</map>
